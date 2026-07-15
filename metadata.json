@@ -1,0 +1,6 @@
+{
+  "name": "Worship Helper",
+  "description": "Landing page moderna e interativa para o Worship Helper, plataforma completa de gestão de ministérios de louvor, escalas, cifras e eventos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
