@@ -190,9 +190,6 @@ export default function App() {
               <span className="text-sm font-extrabold tracking-tight text-white font-display uppercase block">
                 Worship Helper
               </span>
-              <span className="text-[9px] text-cyan-400 font-mono tracking-widest block uppercase">
-                Excelência no Altar
-              </span>
             </div>
           </a>
 
@@ -671,7 +668,7 @@ export default function App() {
               {!demoSubmitted ? (
                 <form onSubmit={handleDemoSubmit} className="space-y-4">
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Deseja tirar dúvidas técnicas ou receber ajuda para importar as cifras antigas da sua igreja? Agende uma conversa gratuita com um especialista em louvor da nossa equipe.
+                    Na demonstração, vamos mostrar como o Worship Helper funciona na prática: criação de eventos, cadastro de pessoas, delegação de funções, configuração de permissões, adição de músicas ao repertório e uso no dia a dia da equipe.
                   </p>
                   
                   {demoError && (
@@ -754,7 +751,7 @@ export default function App() {
                         </>
                       )}
                     </button>
-                    <p className="text-[10px] text-center text-slate-500 mt-3">Retornamos o contato via WhatsApp em menos de 1 hora comercial.</p>
+                    <p className="text-[10px] text-center text-slate-500 mt-3">Retornamos o contato via WhatsApp em algumas horas.</p>
                   </div>
                 </form>
               ) : (
@@ -778,7 +775,7 @@ export default function App() {
                     </p>
                     <p className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" />
-                      <span>Contato estimado: menos de 60 minutos</span>
+                      <span>Contato estimado: em algumas horas</span>
                     </p>
                   </div>
                   <button
