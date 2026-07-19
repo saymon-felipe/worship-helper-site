@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { 
   ArrowRight, Sparkles, Star, Calendar, Music, Shield, 
   MessageSquare, ChevronDown, Check, Play, Mail, CheckCircle2, 
-  Building, User, ShieldAlert, PhoneCall, HelpCircle, Heart
+  Building, User, ShieldAlert, PhoneCall, HelpCircle, Heart, Download, Smartphone
 } from 'lucide-react';
 
 import InteractivePreview from './components/InteractivePreview';
@@ -24,6 +24,7 @@ import TermsView from './components/TermsView';
 import PrivacyView from './components/PrivacyView';
 
 export default function App() {
+  const appUrl = import.meta.env.VITE_URL_APP || (import.meta.env.DEV ? 'http://localhost:8080' : 'https://app.worshiphelper.com.br');
   // Global smooth scrolling logic for anchors without hash URL pollution
   useEffect(() => {
     const handleScrollLink = (e: MouseEvent) => {
@@ -397,6 +398,28 @@ export default function App() {
             })}
           </div>
 
+        </div>
+      </section>
+
+      <section id="instalar-app" className="border-t border-slate-900 bg-slate-950 py-20">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[1fr_auto] items-center gap-8">
+          <div className="flex items-start gap-4">
+            <div className="shrink-0 w-12 h-12 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 flex items-center justify-center">
+              <Smartphone className="w-6 h-6" />
+            </div>
+            <div>
+              <p className="text-cyan-400 text-xs font-mono uppercase tracking-wider mb-2">Sempre à mão</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-white font-display">Instale o Worship Helper no seu celular</h2>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-400">Abra o app no navegador e adicione-o à tela inicial para acessar sua equipe de louvor como um aplicativo.</p>
+            </div>
+          </div>
+          <a
+            href={appUrl}
+            className="w-full md:w-auto px-6 py-3.5 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-slate-950 text-sm font-bold transition-colors flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/10"
+          >
+            <Download className="w-4 h-4" />
+            Abrir app para instalar
+          </a>
         </div>
       </section>
 
